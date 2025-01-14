@@ -11,7 +11,7 @@ import {
 
 function NavBar() {
     return (
-    <div className="flex justify-center m-5">
+    <div className="flex justify-center p-5 bg-slate-800">
         <NavigationMenu>
             <NavigationMenuList>
                 <NavigationMenuItem>
