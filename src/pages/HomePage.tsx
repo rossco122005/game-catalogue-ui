@@ -24,9 +24,9 @@ function HomePage() {
         <div className="bg-slate-800 text-white">
             <div className="text-4xl text-center mb-4">Game Catalogue</div>
                 <div className="grid grid-cols-12 gap-5">
-                        {games.map((game) => {
+                        {games.map((game, key) => {
                                 return(
-                                    <div className="col-span-3 p-5">
+                                    <div key={key} className="col-span-3 p-5">
                                         <HomePageGame name={game.name} genre={game.genre} image={game.image}/>
                                     </div>
                                 )
