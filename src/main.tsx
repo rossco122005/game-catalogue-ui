@@ -7,13 +7,21 @@ import AboutPage from './pages/AboutPage.tsx'
 import NotFoundPage from './pages/NotFoundPage.tsx'
 import LoginPage from './pages/LoginPage.tsx'
 import NavBar from './components/NavBar/NavBar.tsx'
+import {
+  QueryClient,
+  QueryClientProvider,
+} from '@tanstack/react-query'
+
+const queryClient = new QueryClient()
 
 const HeaderLayout = () => (
   <>
-    <header>
-      <NavBar />
-    </header>
-    <Outlet />
+    <QueryClientProvider client={queryClient}>
+      <header>
+        <NavBar />
+      </header>
+      <Outlet />
+    </QueryClientProvider>
   </>
 );
 

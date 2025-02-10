@@ -15,7 +15,7 @@ function HomePageGame({name, genre, image}: IGame) {
                     <CardDescription>{genre}</CardDescription>
                 </CardHeader>
                 <CardContent>
-                    <img src={image} alt="" />
+                    <img src={image} alt={name} />
                 </CardContent>
                 <CardFooter>
 
