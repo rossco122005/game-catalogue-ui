@@ -3,7 +3,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 interface IGame {
     name: string
     genre: string
-    image: string
+    image: string | undefined
 }
 
 function HomePageGame({name, genre, image}: IGame) {
@@ -18,7 +18,6 @@ function HomePageGame({name, genre, image}: IGame) {
                     <img src={image} alt={name} />
                 </CardContent>
                 <CardFooter>
-
                 </CardFooter>
             </Card>
         </div>
