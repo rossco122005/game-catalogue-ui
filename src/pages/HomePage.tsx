@@ -7,6 +7,7 @@ import Humanity from '../images/games/humanity.jpg'
 import RE4 from '../images/games/resident-evil-4.jpg'
 import Robocop from '../images/games/robocop-rogue-city.jpg'
 import Witcher from '../images/games/the-witcher-3.jpg'
+import Footer from '../components/Footer/Footer.tsx'
 import {
     QueryClient,
     QueryClientProvider,
@@ -36,6 +37,7 @@ function HomePage() {
     console.log(gamesData)
     
     return (
+        <>
         <div className="bg-slate-800 text-white">
             <div className="text-4xl text-center mb-4">Game Catalogue</div>
                 <div className="grid grid-cols-12 gap-5">
@@ -49,6 +51,8 @@ function HomePage() {
                         )}
                 </div>
         </div>
+        <Footer />              
+        </>
     )
 }
 
